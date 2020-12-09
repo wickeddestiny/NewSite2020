@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
-    
+    box-sizing: border-box;
 }
+
 body{
     background-color: rgb(211, 211, 211);
     width: 100%;
@@ -11,22 +11,24 @@ body{
     background-image: url(/images/white\ dog.png);
     background-repeat: repeat;
 }
+
 header{
     width: 100%;
-    
 }
+
 .pre-header {
     background-color: rgb(167, 167, 167);
     height: 6rem;
     border: none;
     border-radius: 0px 0px 90px 90px;
     width: 100%;
-    
 }
+
 #pony{
     position: fixed;
     z-index: 1;
 }
+
 .pre-header div p {
     text-transform: uppercase;
     font-weight: 500;
@@ -36,6 +38,7 @@ header{
     margin-top: 20px;
     transition: 0.2s;
 }
+
 .pre-header div p:hover{
     color: red;
     font-size: 20px;
@@ -47,13 +50,11 @@ header{
     */
     height: 96px;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     margin: 0;
     padding: 0;
     cursor: pointer;
-    
 }
-
 
 .pre-menu{
     list-style: none;
@@ -61,8 +62,6 @@ header{
     display: inline-block;
     text-transform: uppercase;
     width: 100%;
-    
-    
 }
 
 .pre-menu li{
@@ -78,19 +77,20 @@ header{
     padding: 5px;
     border: solid rgb(255, 238, 0) 3px ;
     border-radius: 10px;
-    
 }
+
 .pre-menu li a {
     color: rgb(0, 0, 0);
     font-weight: 700;
     text-decoration: none;
     transition: 0.2s;
 }
+
 .pre-menu li a:hover {
     color: rgb(255, 238, 0);
     font-weight: 700;
-    
 }
+
 #nav-space{
     background-color: rgb(224, 224, 224);
     height: 4rem;
@@ -98,16 +98,15 @@ header{
     border: none;
     border-radius: 0px 0px 90px 90px;
 }
+
 .main-menu{
     display: flex;
     text-transform: uppercase;
     font-weight: 400;
     color: rgb(0, 0, 0);
     justify-content: center;
-    
-    
-    
 }
+
 .main-menu li {
     list-style: none;
     display: inline-block;
@@ -117,18 +116,17 @@ header{
     max-width: 100%;
     display: inline-flex;
     justify-content: center;
-    
-    
 }
+
 .main-menu li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     transition: 0.4s;
 }
+
 .main-menu li a:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
-
 }
 
 
@@ -153,18 +151,18 @@ header{
     text-align: center;
     border-radius: 20px;
     align-items: center;
-    
 }
+
 .buyNow:hover {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
     background-color:#ffab23;
     color: red !important;
     border:2px solid #ffaa22;
 }
+
 .buyNow:active {
 	position:relative;
     top:1px;
-    
 }
 
 section .aboutText{
@@ -172,9 +170,8 @@ section .aboutText{
     margin-bottom: 70px;
     font-size: 60px;
     position: relative;
-
-    
 }
+
 #aboutUs{
     margin-top: 12rem;
     padding: 5rem ;
@@ -189,25 +186,24 @@ section .aboutText{
     right: 4%;
     border-radius: 2px 40px 40px 2px;
 }
+
 #aboutUs:hover{
-    
     font-size: 15px;
     transform: scale(1.05);
 }
+
 .usImg{
     width: 115%;
     border: solid black 4px;
-
 }
 
 #textAbout{
     text-align: left;
     align-content: center;
     position: relative;
-
 }
+
 .aboutDesc{
-    
     position: absolute;
     bottom: 10%;
     top: 80%;
@@ -217,9 +213,8 @@ section .aboutText{
     text-align: center;
     margin-bottom: 70px;
     font-size: 60px;
-    
-    
 }
+
 #breed{
     padding: 80px;
     background-color: rgb(148, 148, 148);
@@ -235,6 +230,7 @@ section .aboutText{
     border-radius: 40px 2px 2px 40px;
     width: 1140px;
 }
+
 #breed:hover{
     
     font-size: 15px;
@@ -246,29 +242,27 @@ section .aboutText{
     width: 100%;
     border: solid rgb(105, 105, 105) 10px;
     border-radius: 10px;
-    
 }
 
 img#germanDog,#huskeyDog,#samoyedDog {
-    
     height: 304px !important ;
-    
 }
 
 .naslovBreed{
     margin: 15px;
     font-size: larger;
     margin-bottom: 30px;
-
 }
+
 .eachInfo {
     font-size: large;
 }
+
 .linkBuy{
     margin-top: 20px;
     text-align: center;
-    
 }
+
 .clickPBtn{
     text-decoration: none !important;
 }
@@ -278,11 +272,12 @@ img#germanDog,#huskeyDog,#samoyedDog {
    font-size: 150px;
    transition: 0.8s;
 }
+
 #paw:hover{
    color: rgb(81, 255, 0);
    font-size: 150px;
-   
 }
+
 #food{
     margin-top: 28px;
     padding: 5rem ;
@@ -297,22 +292,21 @@ img#germanDog,#huskeyDog,#samoyedDog {
     right: 4%;
     border-radius: 2px 40px 40px 2px;
 }
+
 section .foodText{
     text-align: center;
     margin-bottom: 70px;
     font-size: 60px;
     position: relative;
-
-    
 }
+
 #food:hover{
-    
     font-size: 15px;
     transform: scale(1.05);
 }
+
 .usImg{
     width: 115%;
-    
 }
 
 #textFood{
@@ -372,12 +366,7 @@ img#germanDog,#huskeyDog,#samoyedDog {
     font-size: large;
 }
 
-/*              LOGIN.HTML*/
-
-
-
-
-
+/*                           LOGIN HTML                                   */
 
 
 #regForm{
@@ -388,6 +377,7 @@ img#germanDog,#huskeyDog,#samoyedDog {
     
     
 }
+
 #emailField1,#emailField2,#repeatemailField{
     height: 3.8rem;
     font-size: larger;
@@ -395,97 +385,49 @@ img#germanDog,#huskeyDog,#samoyedDog {
     color: rgb(0, 0, 0);
     
 }
+
 #repeatemailField{
     margin-top: 16px;
 }
 
-#passField1,#passField2,#passField3{
+#passLog,#passSign,#passRepeat{
     height: 3.8rem;
     font-size: larger;
     background-color: rgb(209, 209, 209);
     color: rgb(0, 0, 0);
-    
-    
 }
+
 .passwordLabel{
     display: block;
 }
+
 #checkSection1,checkSection2{
-    
     width: auto;
     height: 20%;
+}
 
+#checkLogBtn,#checkLogBtn::selection,#keepLoggedIn,#keepLoggedIn::selection
+,#checkSignBtn,#checkSignBtn::selection,#checkAgreeTerms,#checkAgreeTerms::selection{
+    height: 1.8rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-left: 10%;
+}
 
-}
-#checkField1{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-    padding: 20rem;
-    
-}
-#checkField1::selection{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-    
-    
-}
-#checkField2{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-    padding: 20rem;
-    
-}
-#checkField2::selection{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-    
-    
-}
-#checkField3{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-    padding: 20rem;
-    
-}
-#checkField3::selection{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-    
-    
-}
-#checkField4{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-    padding: 20rem;
-    
-}
-#checkField4::selection{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-    
-    
-}
 label{
     color: white;
 }
+
 #showLoginPass{
     margin-top: 15%;
 }
+
 #showLoginPass,#keepMeLogged,#showSignInPass,#agreeTerms{
     margin-left: 20%;
     display: block;
-    
 }
 
-#btnField1,#btnField2{
+#logInBtn,#signInBtn{
     width: 15rem;
     margin-left: 20%;
     margin-right: 20%;
@@ -496,29 +438,20 @@ label{
     justify-content: space-evenly;
     background-color: rgb(255, 255, 255);
     color: black;
-    
-    
 }
 
 #arrow{
     color: rgb(0, 0, 0);
     font-size: 40px;
-    
 }
-#btnField1:hover i{
-    
+
+#logInBtn:hover i,#signInBtn:hover i{
     animation: loginArrow 1.3s ease-in-out;
-    
 }
-#btnField2:hover i{
-    
-    animation: loginArrow 1.3s ease-in-out;
-    
-}
+
 @keyframes loginArrow{
     form{
         transform: rotate(0deg);
-        
     }
     25%{
         transform: rotate(90deg);
@@ -546,21 +479,21 @@ label{
     font-size: 1.5rem;
     position: relative;
 }
+
 .btnSign ,.btnLog{
     padding: 1.0rem 3rem;
     background-color: 209, 209, 209;
     outline-style: none;
     position: relative;
     margin: auto;
-    
-    
 }
+
 .btnSign:focus,.btnLog:focus{
     outline-style: none;
     background: transparent;
     border-radius: 30px 30px 30px 30px;
-    
 }
+
 .btnLog{
     border: 1;
     border-right: none;

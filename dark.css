@@ -371,31 +371,7 @@ img#germanDog,#huskeyDog,#samoyedDog {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*                           LOGIN HTML                                   */
 
 
 
@@ -407,7 +383,7 @@ img#germanDog,#huskeyDog,#samoyedDog {
     
     
 }
-#emailField1,#emailField1,#repeatemailField{
+#emailField1,#emailField2,#repeatemailField{
     height: 3.8rem;
     font-size: larger;
     background-color: rgb(109, 109, 109);
@@ -420,62 +396,26 @@ img#germanDog,#huskeyDog,#samoyedDog {
 .passwordLabel{
     display: block;
 }
-#passField1,#passField2,#passField3{
+#passLog,#passSign,#passRepeat{
     height: 3.8rem;
     font-size: larger;
     background-color: rgb(109, 109, 109);
     color: white;
-    
-    
 }
+
 #checkSection1,checkSection2{
-    
     width: auto;
     height: 20%;
-
-
 }
 
-#checkField1{
+#checkLogBtn,#checkLogBtn::selection,#keepLoggedIn,#keepLoggedIn::selection
+,#checkSignBtn,#checkSignBtn::selection,#checkAgreeTerms,#checkAgreeTerms::selection{
+    height: 1.8rem;
     height: 1.8rem;
     width: 1.8rem;
     margin-left: 10%;
 }
-#checkField1::selection{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-}
-#checkField2{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-}
-#checkField2::selection{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-}
-#checkField3{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-}
-#checkField3::selection{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-}
-#checkField4{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-}
-#checkField4::selection{
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-}
+
 
 
 #showLoginPass{
@@ -487,7 +427,7 @@ img#germanDog,#huskeyDog,#samoyedDog {
     
 }
 
-#btnField1,#btnField2{
+#logInBtn,#signInBtn{
     width: 15rem;
     margin-left: 20%;
     margin-right: 20%;
@@ -506,12 +446,7 @@ img#germanDog,#huskeyDog,#samoyedDog {
     font-size: 40px;
     
 }
-#btnField1:hover i{
-    
-    animation: loginArrow 1.3s ease-in-out;
-    
-}
-#btnField2:hover i{
+#logInBtn:hover i,#signInBtn:hover i{
     
     animation: loginArrow 1.3s ease-in-out;
     
