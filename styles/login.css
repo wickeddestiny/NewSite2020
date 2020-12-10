@@ -1,0 +1,167 @@
+
+
+
+
+#regForm{
+    margin-top: 20rem;
+    font-size: 1.5rem;
+    background-color: rgb(138, 138, 138);
+    padding: 5rem;
+    border-radius: 10%;
+    
+    
+}
+
+#emailField1,#emailField2,#repeatemailField{
+    height: 3.8rem;
+    font-size: larger;
+    background-color: rgb(209, 209, 209);
+    color: rgb(0, 0, 0);
+    
+}
+
+#repeatemailField{
+    margin-top: 16px;
+}
+
+#passLog,#passSign,#passRepeat{
+    height: 3.8rem;
+    font-size: larger;
+    background-color: rgb(209, 209, 209);
+    color: rgb(0, 0, 0);
+}
+
+.passwordLabel{
+    display: block;
+}
+
+#checkSection1,checkSection2{
+    width: auto;
+    height: 20%;
+}
+
+#checkLogBtn,#checkLogBtn::selection,#keepLoggedIn,#keepLoggedIn::selection
+,#checkSignBtn,#checkSignBtn::selection,#checkAgreeTerms,#checkAgreeTerms::selection{
+    height: 1.8rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-left: 10%;
+}
+
+label{
+    color: white;
+}
+#forLoginPasswordField{
+    position: relative;
+    
+}
+#eyeLog{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    cursor: pointer;
+}
+#forSignPasswordField{
+    position: relative;
+    
+}
+#eyeSign{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    cursor: pointer;
+}
+
+
+#showLoginPass{
+    margin-top: 15%;
+}
+
+#showLoginPass,#keepMeLogged,#showSignInPass,#agreeTerms{
+    margin-left: 20%;
+    display: block;
+}
+
+#logInBtn,#signInBtn{
+    width: 15rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#arrow{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+#logInBtn:hover i,#signInBtn:hover i{
+    animation: loginArrow 1.3s ease-in-out;
+}
+
+@keyframes loginArrow{
+    form{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+        color: rgb(255, 0, 0);
+    }
+    50%{
+        transform: rotate(180deg);
+        color: rgb(255, 251, 0);
+    }
+    75%{
+        transform: rotate(270deg);
+        color: rgb(131, 131, 131);
+    }
+    to{
+        transform: rotate(360deg);
+        color: rgb(255, 255, 255);
+    }
+}
+
+#powerBtn{
+    display: flex;
+    justify-content: center;
+    height: 6rem;
+    align-items: center;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.btnSign ,.btnLog{
+    padding: 1.0rem 3rem;
+    background-color: 209, 209, 209;
+    outline-style: none;
+    position: relative;
+    margin: auto;
+}
+
+.btnSign:focus,.btnLog:focus{
+    outline-style: none;
+    background: transparent;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.btnLog{
+    border: 1;
+    border-right: none;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.btnSign{
+    border: 1px 1px 1px 0px;
+    border-radius: 30px 30px 30px 30px;
+    border-left: none;
+}
+

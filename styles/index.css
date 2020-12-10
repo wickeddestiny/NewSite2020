@@ -1,56 +1,60 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
-    
+    box-sizing: border-box;
 }
+
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(211, 211, 211);
     width: 100%;
     position: absolute;
-    background-image: url(/images/black\ dog.png);
+    background-image: url(/images/white\ dog.png);
     background-repeat: repeat;
 }
+
 header{
     width: 100%;
-    
 }
+
 .pre-header {
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(167, 167, 167);
     height: 6rem;
     border: none;
     border-radius: 0px 0px 90px 90px;
     width: 100%;
-    
 }
+
 #pony{
     position: fixed;
     z-index: 1;
 }
+
 .pre-header div p {
     text-transform: uppercase;
     font-weight: 500;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     align-items: center;
     margin-top: 20px;
     transition: 0.2s;
 }
+
 .pre-header div p:hover{
     color: red;
     font-size: 20px;
 }
 
 .logoWhite,.logoBlack{
+    /*
+    position: absolute;
+    */
     height: 96px;
     width: 100%;
-    background-size: contain;
+    object-fit: contain;
     margin: 0;
     padding: 0;
-    
+    cursor: pointer;
 }
-
-
 
 .pre-menu{
     list-style: none;
@@ -58,8 +62,6 @@ header{
     display: inline-block;
     text-transform: uppercase;
     width: 100%;
-    
-    
 }
 
 .pre-menu li{
@@ -75,36 +77,36 @@ header{
     padding: 5px;
     border: solid rgb(255, 238, 0) 3px ;
     border-radius: 10px;
-    
 }
+
 .pre-menu li a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 700;
     text-decoration: none;
     transition: 0.2s;
 }
+
 .pre-menu li a:hover {
     color: rgb(255, 238, 0);
     font-weight: 700;
-    
 }
+
 #nav-space{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(224, 224, 224);
     height: 4rem;
     width: 84%;
     border: none;
     border-radius: 0px 0px 90px 90px;
 }
+
 .main-menu{
     display: flex;
     text-transform: uppercase;
     font-weight: 400;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     justify-content: center;
-    
-    
-    
 }
+
 .main-menu li {
     list-style: none;
     display: inline-block;
@@ -114,18 +116,17 @@ header{
     max-width: 100%;
     display: inline-flex;
     justify-content: center;
-    
-    
 }
+
 .main-menu li a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: 0.4s;
 }
-.main-menu li a:hover {
-    color: rgb(196, 196, 196);
-    text-decoration: none;
 
+.main-menu li a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 
@@ -150,32 +151,33 @@ header{
     text-align: center;
     border-radius: 20px;
     align-items: center;
-    
 }
+
 .buyNow:hover {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
     background-color:#ffab23;
     color: red !important;
     border:2px solid #ffaa22;
 }
+
 .buyNow:active {
 	position:relative;
     top:1px;
-    
 }
+
+/*      About Us        */ 
 
 section .aboutText{
     text-align: center;
     margin-bottom: 70px;
     font-size: 60px;
     position: relative;
-
-    
 }
+
 #aboutUs{
     margin-top: 12rem;
     padding: 5rem ;
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(155, 155, 155);
     color: rgb(255, 255, 255);
     -webkit-box-shadow: 10px 10px 18px 1px #444444; 
     box-shadow: 10px 10px 18px 1px #444444;
@@ -186,40 +188,41 @@ section .aboutText{
     right: 4%;
     border-radius: 2px 40px 40px 2px;
 }
+
 #aboutUs:hover{
-    
     font-size: 15px;
     transform: scale(1.05);
 }
+
 .usImg{
     width: 115%;
-    
+    border: solid black 4px;
 }
 
 #textAbout{
     text-align: left;
     align-content: center;
     position: relative;
-
 }
+
 .aboutDesc{
-    
     position: absolute;
     bottom: 10%;
     top: 80%;
     text-align: center;
 }
+
+/*      Breed        */ 
+
 .breedText{
     text-align: center;
     margin-bottom: 70px;
     font-size: 60px;
-    text-shadow: rgb(199, 199, 199) 2px 1px;
-    
-    
 }
+
 #breed{
     padding: 80px;
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(148, 148, 148);
     margin-top: 28px;
     margin-left: 132px;
     position: relative;
@@ -232,8 +235,8 @@ section .aboutText{
     border-radius: 40px 2px 2px 40px;
     width: 1140px;
 }
+
 #breed:hover{
-    
     font-size: 15px;
     transform: scale(1.05);
 }
@@ -243,47 +246,49 @@ section .aboutText{
     width: 100%;
     border: solid rgb(105, 105, 105) 10px;
     border-radius: 10px;
-    
 }
 
 img#germanDog,#huskeyDog,#samoyedDog {
-    
     height: 304px !important ;
-    
 }
 
 .naslovBreed{
     margin: 15px;
     font-size: larger;
     margin-bottom: 30px;
-
 }
+
 .eachInfo {
     font-size: large;
 }
+
 .linkBuy{
     margin-top: 20px;
     text-align: center;
-    
 }
+
 .clickPBtn{
     text-decoration: none !important;
 }
 
 #paw{
-   color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
    font-size: 150px;
    transition: 0.8s;
 }
+
 #paw:hover{
-   color: rgb(0, 38, 255);
+   color: rgb(81, 255, 0);
    font-size: 150px;
-   
 }
+
+/*      Food       */ 
+
+
 #food{
     margin-top: 28px;
     padding: 5rem ;
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(155, 155, 155);
     color: rgb(255, 255, 255);
     -webkit-box-shadow: 10px 10px 18px 1px #444444; 
     box-shadow: 10px 10px 18px 1px #444444;
@@ -294,23 +299,21 @@ img#germanDog,#huskeyDog,#samoyedDog {
     right: 4%;
     border-radius: 2px 40px 40px 2px;
 }
+
 section .foodText{
     text-align: center;
     margin-bottom: 70px;
     font-size: 60px;
     position: relative;
-
-    
 }
+
 #food:hover{
-    
     font-size: 15px;
     transform: scale(1.05);
 }
+
 .usImg{
     width: 115%;
-    border: solid black 4px;
-    
 }
 
 #textFood{
@@ -320,7 +323,6 @@ section .foodText{
 
 }
 .foodDesc{
-    
     position: absolute;
     bottom: 10%;
     top: 80%;
@@ -330,12 +332,13 @@ section .foodText{
     text-align: center;
     margin-bottom: 70px;
     font-size: 60px;
-    
-    
 }
+
+/*      Food        */ 
+
 #toys{
     padding: 80px;
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(148, 148, 148);
     margin-top: 28px;
     margin-left: 132px;
     position: relative;
@@ -349,167 +352,23 @@ section .foodText{
     width: 1140px;
 }
 #toys:hover{
-    
     font-size: 15px;
     transform: scale(1.05);
 }
 
 img#germanDog,#huskeyDog,#samoyedDog {
-    
     height: 304px !important ;
-    
 }
 
 .naslovToys{
     margin: 15px;
     font-size: larger;
     margin-bottom: 30px;
-
 }
+
 .eachToys {
     font-size: large;
 }
 
+/*      About Us        */ 
 
-/*                           LOGIN HTML                                   */
-
-
-
-#regForm{
-    margin-top: 20rem;
-    font-size: 1.5rem;
-    background-color: rgb(80, 80, 80);
-    padding: 5rem;
-    
-    
-}
-#emailField1,#emailField2,#repeatemailField{
-    height: 3.8rem;
-    font-size: larger;
-    background-color: rgb(109, 109, 109);
-    color: rgb(0, 0, 0);
-    
-}
-#repeatemailField{
-    margin-top: 16px;
-}
-.passwordLabel{
-    display: block;
-}
-#passLog,#passSign,#passRepeat{
-    height: 3.8rem;
-    font-size: larger;
-    background-color: rgb(109, 109, 109);
-    color: white;
-}
-
-#checkSection1,checkSection2{
-    width: auto;
-    height: 20%;
-}
-
-#checkLogBtn,#checkLogBtn::selection,#keepLoggedIn,#keepLoggedIn::selection
-,#checkSignBtn,#checkSignBtn::selection,#checkAgreeTerms,#checkAgreeTerms::selection{
-    height: 1.8rem;
-    height: 1.8rem;
-    width: 1.8rem;
-    margin-left: 10%;
-}
-
-
-
-#showLoginPass{
-    margin-top: 15%;
-}
-#showLoginPass,#keepMeLogged,#showSignInPass,#agreeTerms{
-    margin-left: 20%;
-    display: block;
-    
-}
-
-#logInBtn,#signInBtn{
-    width: 15rem;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 1rem;
-    align-items: center;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(0, 0, 0);
-    
-    
-}
-
-#arrow{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    
-}
-#logInBtn:hover i,#signInBtn:hover i{
-    
-    animation: loginArrow 1.3s ease-in-out;
-    
-}
-@keyframes loginArrow{
-    form{
-        transform: rotate(0deg);
-        
-    }
-    25%{
-        transform: rotate(90deg);
-        color: rgb(255, 0, 0);
-    }
-    50%{
-        transform: rotate(180deg);
-        color: rgb(255, 251, 0);
-    }
-    75%{
-        transform: rotate(270deg);
-        color: rgb(131, 131, 131);
-    }
-    to{
-        transform: rotate(360deg);
-        color: rgb(255, 255, 255);
-    }
-}
-
-#powerBtn{
-    display: flex;
-    justify-content: center;
-    height: 6rem;
-    align-items: center;
-    font-size: 1.5rem;
-    position: relative;
-}
-.btnSign ,.btnLog{
-    padding: 1.0rem 3rem;
-    background-color: 209, 209, 209;
-    outline-style: none;
-    position: relative;
-    margin: auto;
-    
-    
-}
-.btnSign:focus,.btnLog:focus{
-    outline-style: none;
-    background: transparent;
-    border-radius: 30px 30px 30px 30px;
-    
-}
-.btnLog{
-    border: 1;
-    border-right: none;
-    border-radius: 30px 30px 30px 30px;
-}
-.btnLog:focus{
-    z-index: 1;
-}
-.btnSign{
-    border: 1px 1px 1px 0px;
-    border-radius: 30px 30px 30px 30px;
-    border-left: none;
-}
-.btnSign:focus{
-    z-index: 1;
-}

@@ -11,10 +11,9 @@ let logField = $("#loginField").css("visibility","visible");
         if(whiteImg){
             whiteImg.hide();
             blackImg.css("visibility","visible");
-            $("#darkMode").attr("href","dark.css")
+            $("#darkMode").attr("href","/styles/dark.css")
         }
         else{
-
         }
     });
 
@@ -23,73 +22,65 @@ let logField = $("#loginField").css("visibility","visible");
         if(blackImg){
             blackImg.css("visibility","hidden");
             whiteImg.show();
-            $("#darkMode").attr("href","style.css")
+            $("#darkMode").attr("href","/styles/index.css")
         }
         else{
-
         }
     });
 
 //           SignIn-BTN-Active
-function  signActive () {
+
     $(".btnSign").click(function(){
-        if(".btnSign"){
-            
             $(logField).css("visibility","hidden");
             $(signField).css("visibility","visible");
             $(".btnSign").css("background","transparent")
             $(".btnLog").css("background","white");
-        }
-        else{
-    
-        }
+        
     });
-}
 
 //          LogIn-BTN-Active
-function logActive (){
+
     $(".btnLog").click(function(){
-        if(".btnLog"){
-    
             $(signField).css("visibility","hidden");
             $(logField).css("visibility","visible");
             $(".btnLog").css("background","transparent");
             $(".btnSign").css("background","white");
-    
-        }
-        else{
-    
-        }
+        
     });
-}
 
-//           Show Password Sign In
-
-    $("#checkLogBtn").click(function(){
+    //           Show Password Log In
+    
+    $("#eyeLog").click(function(){
         if ("password" == $("#passLog").attr("type")){
             $("#passLog").prop("type","text")
+            $("#eyeLog").removeClass()
+            $("#eyeLog").addClass("fa fa-eye-slash")
         }
         else{
             $("#passLog").prop("type","password")
+            $("#eyeLog").removeClass()
+            $("#eyeLog").addClass("fa fa-eye")
         }
     });
 
-//           Show Password Log In
+//           Show Password Sign In
 
-    $("#checkSignBtn").click(function(){
-        if ("password" === $("#passSign").attr("type")){
+    $("#eyeSign").click(function(){
+        if ("password" == $("#passSign").attr("type")){
             $("#passSign").prop("type","text")
             $("#passRepeat").prop("type","text")
+            $("#eyeLog").removeClass()
+            $("#eyeLog").addClass("fa fa-eye-slash")
         }
         else{
             $("#passSign").prop("type","password")
             $("#passRepeat").prop("type","password")
+            $("#eyeLog").removeClass()
+            $("#eyeLog").addClass("fa fa-eye")
         }
     });
 
 //           Sign Up BTN  -  Password / Repeated Checker
-
-   
     
     $(function validate() {
         $("#signInBtn").click(function () {
@@ -106,14 +97,6 @@ function logActive (){
         });
     });
 
-
-//           Function-After-Sign/Log Page Click
-
-    $("#logSignPage").click(function(){
-        if("logSignPage"){
-            logActive()
-        }
-    });
 
 
 

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" id="darkMode" href="/style.css">
+    <link rel="stylesheet" id="darkMode" href="/styles/index.css">
+    <link rel="stylesheet" id="darkMode" href="/styles/login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>The Dog Blog</title>
 </head>
@@ -24,7 +25,7 @@
                     </div>
 
                     <div class="col-md-2">
-                        <img class="logoWhite"  src="images/smWhiteLogo.png">
+                        <img class="logoWhite"  src="/images/smWhiteLogo.png">
                         <img class="logoBlack" style="cursor: pointer;" src="/images/smBlackLogo.png">
                     </div>
                     
@@ -32,70 +33,83 @@
                         <ul class="pre-menu">
                             <li><a href="index.html">Home</a></li>
                             <li><a style="color: rgb(255, 238, 0);" href="login.html" id="logSignPage" >Login/Register</a></li>
+                            <li><a href="#">Forum</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Support</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-
     </header>
         
     <div class="container" id="regForm">
             <div class="row" id="powerBtn">
                 
-                <button class="btnLog" onclick="logActive()" style="background: transparent;">Log in</button>
-                <button class="btnSign" onclick="signActive()">Sign Up</button>
+                <button class="btnLog" style="background: transparent;">Log in</button>
+                <button class="btnSign">Sign Up</button>
             </div>
             <div class="row">
-                    <form class="col-md-6" method="GET" id="loginField">
-                    <div class="form-group" >
+                <form class="col-md-6" method="POST" id="loginField">
+                        <div class="form-group">
+
                         <label for="exampleInputEmail1" >Email address</label>
                         <input type="email" class="form-control" aria-describedby="emailHelp" id="emailField1"  autocomplete="on" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
+
+                        </div>
+
                     <div class="form-group">
                         <label for="exampleInputPassword1" >Password</label>
-                        <input type="password" class="form-control" id="passLog" autocomplete="on" required>
+                        <div id="forLoginPasswordField">
+                            <i class="fa fa-eye" aria-hidden="true" id="eyeLog"></i> 
+                            <input type="password" class="form-control" id="passLog" autocomplete="on" required>
+                        </div>
+
                     </div>
                     <div class="form-group form-check" id="checkSection1">
-                        <input type="checkbox" class="form-check-input" id="checkLogBtn">
-                        <label class="form-check-label" for="exampleCheck1" id="showLoginPass" >Show Password</label>
+                        <!-- <input type="checkbox" class="form-check-input" id="checkLogBtn">
+                        <label class="form-check-label" for="exampleCheck1" id="showLoginPass" >Show Password</label> -->
                         <input type="checkbox" class="form-check-input" id="keepLoggedIn">
                         <label class="form-check-label" for="exampleCheck1" id="keepMeLogged" >Keep me Logged In</label>
                     </div>
                 
-                <button type="submit" class="btn btn-primary" id="logInBtn" style="font-weight: 700;"><i class="fa fa-spinner" aria-hidden="true" id="arrow"></i> LOG IN</button>
-                                                                                        
-            
-            </form>
-            <form class="col-md-6"  method="POST"   id="signinField" >
+                 <button type="submit" class="btn btn-primary" id="logInBtn" style="font-weight: 700;"><i class="fa fa-spinner" aria-hidden="true" id="arrow"></i> LOG IN</button>
+                                              <!--fa fa-eye-->                                          
+
+                 </form>
+            <form class="col-md-6"  method="POST" id="signinField" >
                     <div class="form-group" >
                         <label for="exampleInputEmail1" >Email address</label>
                         <input type="email" class="form-control" aria-describedby="emailHelp" id="emailField2"  autocomplete="on" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
                         <label for="exampleInputEmail1" >Repeat Email address</label>
                         <input type="email" class="form-control" aria-describedby="emailHelp" id="repeatemailField"  autocomplete="on" required>
                         
                     </div>
                     <div class="form-group">
-                        
                         <label for="exampleInputPassword1" class="passwordLabel" >Password</label>
-                        <input type="password" class="form-control" id="passSign" autocomplete="on" required>
+
+                        <div id="forSignPasswordField">
+                            <i class="fa fa-eye" aria-hidden="true" id="eyeSign"></i> 
+                            <input type="password" class="form-control" id="passSign" autocomplete="on" required>
+                        </div>
+                        
+
                         <label for="exampleInputPassword1" >Repeat Password</label>
                         <input type="password" class="form-control" id="passRepeat" autocomplete="on" required>
                     </div>
                     <div class="form-group form-check" id="checkSection2">
-                        <input type="checkbox" click="showPasswordSign()" class="form-check-input" id="checkSignBtn">
-                        <label class="form-check-label" for="exampleCheck1" id="showSignInPass" >Show Password</label>
+                        <!-- <input type="checkbox" click="showPasswordSign()" class="form-check-input" id="checkSignBtn">
+                        <label class="form-check-label" for="exampleCheck1" id="showSignInPass" >Show Password</label> -->
+
                         <input type="checkbox" class="form-check-input" id="checkAgreeTerms" required>
                         <label class="form-check-label" for="exampleCheck1" id="agreeTerms"  >Agreed Terms of Service</label>
 
                     </div>
                 
-                <button  class="btn btn-primary" type="submit" onclick="validate()" value="submit" id="signInBtn" style="font-weight: 700;"><i class="fa fa-spinner" aria-hidden="true" id="arrow"></i> SIGN UP</button>
+                <button  class="btn btn-primary" type="submit"="submit" id="signInBtn" style="font-weight: 700;"><i class="fa fa-spinner" aria-hidden="true" id="arrow"></i> SIGN UP</button>
                                                                                         
                     
             </form>
