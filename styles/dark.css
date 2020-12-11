@@ -5,28 +5,28 @@
     
 }
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(0, 54, 82);
     width: 100%;
     position: absolute;
     background-image: url(/images/black\ dog.png);
     background-repeat: repeat;
 }
+
 header{
     width: 100%;
-    
+    position: fixed;
+    z-index: 1;
 }
+
 .pre-header {
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(59, 66, 84);
     height: 6rem;
     border: none;
     border-radius: 0px 0px 90px 90px;
     width: 100%;
     
 }
-#pony{
-    position: fixed;
-    z-index: 1;
-}
+
 .pre-header div p {
     text-transform: uppercase;
     font-weight: 500;
@@ -86,7 +86,7 @@ header{
 }
 
 #nav-space{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(25, 28, 36);
     height: 4rem;
     width: 84%;
     border: none;
@@ -117,11 +117,14 @@ header{
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: 0.4s;
+    font-size: medium;
 }
-.main-menu li a:hover {
-    color: rgb(196, 196, 196);
+.main-menu li:not(:last-child) a:hover {
+    color: #fffb00;
+    border: solid 2px yellow;
     text-decoration: none;
-
+    border-radius: 50%;
+    padding: 10px;
 }
 
 
@@ -130,14 +133,15 @@ header{
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color:#ffec64;
 	border-radius:6px;
-	border:1px solid #ffaa22;
+    border:1px solid #ffaa22;
+    
 	display:inline-block;
 	cursor:pointer;
 	color:#333333;
 	font-size:15px;
 	padding:8px 20px;
 	text-decoration:none;
-    text-shadow:0px 1px 0px #ffee66;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
     background-color: rgb(237, 255, 73);
     width: 8rem;
     color: rgb(31, 5, 5) !important;
@@ -160,79 +164,70 @@ header{
     
 }
 
-section .aboutText{
+/*      About Us        */ 
+
+.naslovAbout,.naslovBreed,.naslovFood,.naslovToys{
     text-align: center;
     margin-bottom: 70px;
     font-size: 60px;
     position: relative;
-
-    
 }
-#aboutUs{
-    margin-top: 12rem;
+
+#aboutUs,#breed,#food,#toys{
+    margin: 14rem auto 4rem auto;
     padding: 5rem ;
-    background-color: rgb(94, 94, 94);
-    color: rgb(255, 255, 255);
+    background-color: rgb(49, 132, 150);
     -webkit-box-shadow: 10px 10px 18px 1px #444444; 
     box-shadow: 10px 10px 18px 1px #444444;
     transition: 0.8s;
     font-weight: bold;
     font-family: sans-serif;
     position: relative;
-    right: 4%;
     border-radius: 2px 40px 40px 2px;
+    font-size: larger;
 }
-#aboutUs:hover{
-    
-    font-size: 15px;
-    transform: scale(1.05);
+#aboutUs,#food{
+    color: rgb(255, 255, 255);
 }
-.usImg{
-    width: 115%;
-    
+#breed,#food,#toys{
+    margin: 4rem auto 4rem auto;
 }
 
-#textAbout{
+#aboutUs:hover,#breed:hover,#food:hover,#toys:hover {
+    font-size: 15px;
+    transform: scale(1.10);
+}
+#aboutText,#foodText,.breedText,.toyText{
     text-align: left;
     align-content: center;
     position: relative;
-
+    font-size: medium;
 }
-.aboutDesc{
-    
+.breedText p:first-child{
+    font-size: x-large;
+}
+.toyText p:first-child{
+    font-size: x-large;
+}
+.usImg{
+    width: 115%;
+    border: solid black 4px;
+}
+
+.aboutDesc,.foodDesc,.toysDesc,.breadDesc{
     position: absolute;
     bottom: 10%;
     top: 80%;
     text-align: center;
+    font-size: large;
 }
-.breedText{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 60px;
-    text-shadow: rgb(199, 199, 199) 2px 1px;
-    
-    
+
+.sectionPhotos{
+    width: 115%;
+    border-radius: 15%;
 }
-#breed{
-    padding: 80px;
-    background-color: rgb(94, 94, 94);
-    margin-top: 28px;
-    margin-left: 132px;
-    position: relative;
-    left: 8%;
-    -webkit-box-shadow: -10px 10px 18px 1px #444444; 
-    box-shadow: -10px 10px 18px 1px #444444;
-    transition: 0.8s;
-    font-weight: bold;
-    font-family: sans-serif;
-    border-radius: 40px 2px 2px 40px;
-    width: 1140px;
-}
-#breed:hover{
-    
-    font-size: 15px;
-    transform: scale(1.05);
-}
+
+
 
 #carouselExampleCaptions{
     font-size: 1.1rem;
@@ -248,15 +243,7 @@ img#germanDog,#huskeyDog,#samoyedDog {
     
 }
 
-.naslovBreed{
-    margin: 15px;
-    font-size: larger;
-    margin-bottom: 30px;
 
-}
-.eachInfo {
-    font-size: large;
-}
 .linkBuy{
     margin-top: 20px;
     text-align: center;
@@ -272,99 +259,11 @@ img#germanDog,#huskeyDog,#samoyedDog {
    transition: 0.8s;
 }
 #paw:hover{
-   color: rgb(0, 38, 255);
+   color: rgb(32, 65, 255);
    font-size: 150px;
    
 }
-#food{
-    margin-top: 28px;
-    padding: 5rem ;
-    background-color: rgb(94, 94, 94);
-    color: rgb(255, 255, 255);
-    -webkit-box-shadow: 10px 10px 18px 1px #444444; 
-    box-shadow: 10px 10px 18px 1px #444444;
-    transition: 0.8s;
-    font-weight: bold;
-    font-family: sans-serif;
-    position: relative;
-    right: 4%;
-    border-radius: 2px 40px 40px 2px;
-}
-section .foodText{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 60px;
-    position: relative;
 
-    
-}
-#food:hover{
-    
-    font-size: 15px;
-    transform: scale(1.05);
-}
-.usImg{
-    width: 115%;
-    border: solid black 4px;
-    
-}
-
-#textFood{
-    text-align: left;
-    align-content: center;
-    position: relative;
-
-}
-.foodDesc{
-    
-    position: absolute;
-    bottom: 10%;
-    top: 80%;
-    text-align: center;
-}
-.breedText{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 60px;
-    
-    
-}
-#toys{
-    padding: 80px;
-    background-color: rgb(94, 94, 94);
-    margin-top: 28px;
-    margin-left: 132px;
-    position: relative;
-    left: 8%;
-    -webkit-box-shadow: -10px 10px 18px 1px #444444; 
-    box-shadow: -10px 10px 18px 1px #444444;
-    transition: 0.8s;
-    font-weight: bold;
-    font-family: sans-serif;
-    border-radius: 40px 2px 2px 40px;
-    width: 1140px;
-}
-#toys:hover{
-    
-    font-size: 15px;
-    transform: scale(1.05);
-}
-
-img#germanDog,#huskeyDog,#samoyedDog {
-    
-    height: 304px !important ;
-    
-}
-
-.naslovToys{
-    margin: 15px;
-    font-size: larger;
-    margin-bottom: 30px;
-
-}
-.eachToys {
-    font-size: large;
-}
 
 
 /*                           LOGIN HTML                                   */
@@ -374,15 +273,16 @@ img#germanDog,#huskeyDog,#samoyedDog {
 #regForm{
     margin-top: 20rem;
     font-size: 1.5rem;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(49, 132, 150);
     padding: 5rem;
-    
+    border-radius: 10%;
     
 }
-#emailField1,#emailField2,#repeatemailField{
+#emailField1,#emailField2,#repeatemailField,
+#passLog,#passSign,#passRepeat{
     height: 3.8rem;
     font-size: larger;
-    background-color: rgb(109, 109, 109);
+    background-color: rgb(170, 178, 197);
     color: rgb(0, 0, 0);
     
 }
@@ -392,16 +292,22 @@ img#germanDog,#huskeyDog,#samoyedDog {
 .passwordLabel{
     display: block;
 }
-#passLog,#passSign,#passRepeat{
-    height: 3.8rem;
-    font-size: larger;
-    background-color: rgb(109, 109, 109);
-    color: white;
+
+#checkSection1,#checkSection2{
+    width: auto;
+    height: 15%;
+    margin-bottom: 0px;
+}
+label{
+    color: rgb(0, 0, 0);
 }
 
-#checkSection1,checkSection2{
-    width: auto;
-    height: 20%;
+#emailHelp{
+    color: rgb(0, 0, 0) !important; 
+}
+#forLoginPasswordField{
+    position: relative;
+    
 }
 
 #checkLogBtn,#checkLogBtn::selection,#keepLoggedIn,#keepLoggedIn::selection
@@ -411,16 +317,35 @@ img#germanDog,#huskeyDog,#samoyedDog {
     width: 1.8rem;
     margin-left: 10%;
 }
-
-
-
-#showLoginPass{
-    margin-top: 15%;
+#eyeLog{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    cursor: pointer;
 }
+#eyeSign{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    cursor: pointer;
+}
+#forSignPasswordField{
+    position: relative;
+    
+}
+
+
 #showLoginPass,#keepMeLogged,#showSignInPass,#agreeTerms{
     margin-left: 20%;
     display: block;
     
+}
+#keepMeLogged:checked{
+    background-color: rgb(0, 0, 0) !important;
 }
 
 #logInBtn,#signInBtn{
@@ -433,6 +358,7 @@ img#germanDog,#huskeyDog,#samoyedDog {
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(0, 0, 0);
+    color: white;
     
     
 }
@@ -498,14 +424,9 @@ img#germanDog,#huskeyDog,#samoyedDog {
     border-right: none;
     border-radius: 30px 30px 30px 30px;
 }
-.btnLog:focus{
-    z-index: 1;
-}
+
 .btnSign{
     border: 1px 1px 1px 0px;
     border-radius: 30px 30px 30px 30px;
     border-left: none;
-}
-.btnSign:focus{
-    z-index: 1;
 }

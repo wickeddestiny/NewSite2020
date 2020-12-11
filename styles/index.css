@@ -5,28 +5,26 @@
 }
 
 body{
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(0, 141, 213);
     width: 100%;
     position: absolute;
     background-image: url(/images/white\ dog.png);
     background-repeat: repeat;
+    z-index: -2;
 }
 
 header{
     width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .pre-header {
-    background-color: rgb(167, 167, 167);
+    background-color: rgb(121, 134, 164);
     height: 6rem;
     border: none;
     border-radius: 0px 0px 90px 90px;
     width: 100%;
-}
-
-#pony{
-    position: fixed;
-    z-index: 1;
 }
 
 .pre-header div p {
@@ -92,7 +90,7 @@ header{
 }
 
 #nav-space{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(170, 178, 197);
     height: 4rem;
     width: 84%;
     border: none;
@@ -122,11 +120,15 @@ header{
     color: rgb(0, 0, 0);
     text-decoration: none;
     transition: 0.4s;
+    font-size: medium;
 }
 
-.main-menu li a:hover {
-    color: rgb(255, 255, 255);
+.main-menu li:not(:last-child) a:hover {
+    color: #fffb00;
+    border: solid 2px yellow;
     text-decoration: none;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 
@@ -140,7 +142,7 @@ header{
 	cursor:pointer;
 	color:#333333;
 	font-size:15px;
-	padding:8px 20px;
+	padding:8px 20px ;
 	text-decoration:none;
     text-shadow:0px 1px 0px #ffee66;
     background-color: rgb(237, 255, 73);
@@ -165,80 +167,82 @@ header{
     top:1px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*      About Us        */ 
 
-section .aboutText{
+.naslovAbout,.naslovBreed,.naslovFood,.naslovToys{
     text-align: center;
     margin-bottom: 70px;
     font-size: 60px;
     position: relative;
 }
 
-#aboutUs{
-    margin-top: 12rem;
+#aboutUs,#breed,#food,#toys{
+    margin: 14rem auto 4rem auto;
     padding: 5rem ;
-    background-color: rgb(155, 155, 155);
-    color: rgb(255, 255, 255);
+    background-color: rgb(120, 203, 206);
     -webkit-box-shadow: 10px 10px 18px 1px #444444; 
     box-shadow: 10px 10px 18px 1px #444444;
     transition: 0.8s;
     font-weight: bold;
     font-family: sans-serif;
     position: relative;
-    right: 4%;
     border-radius: 2px 40px 40px 2px;
+    font-size: larger;
 }
-
-#aboutUs:hover{
+#aboutUs,#food{
+    color: rgb(255, 255, 255);
+}
+#breed,#food,#toys{
+    margin: 4rem auto 4rem auto;
+}
+#aboutUs:hover,#breed:hover,#food:hover,#toys:hover {
     font-size: 15px;
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
-
+#aboutText,#foodText,.breedText,.toyText{
+    text-align: left;
+    align-content: center;
+    position: relative;
+    font-size: medium;
+}
+.breedText p:first-child{
+    font-size: x-large;
+}
+.toyText p:first-child{
+    font-size: x-large;
+}
 .usImg{
     width: 115%;
     border: solid black 4px;
 }
 
-#textAbout{
-    text-align: left;
-    align-content: center;
-    position: relative;
-}
 
-.aboutDesc{
+.aboutDesc,.foodDesc,.toysDesc,.breadDesc{
     position: absolute;
     bottom: 10%;
     top: 80%;
     text-align: center;
+    font-size: large;
 }
 
-/*      Breed        */ 
-
-.breedText{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 60px;
-}
-
-#breed{
-    padding: 80px;
-    background-color: rgb(148, 148, 148);
-    margin-top: 28px;
-    margin-left: 132px;
-    position: relative;
-    left: 8%;
-    -webkit-box-shadow: -10px 10px 18px 1px #444444; 
-    box-shadow: -10px 10px 18px 1px #444444;
-    transition: 0.8s;
-    font-weight: bold;
-    font-family: sans-serif;
-    border-radius: 40px 2px 2px 40px;
-    width: 1140px;
-}
-
-#breed:hover{
-    font-size: 15px;
-    transform: scale(1.05);
+.sectionPhotos{
+    width: 115%;
+    border-radius: 15%;
 }
 
 #carouselExampleCaptions{
@@ -246,21 +250,14 @@ section .aboutText{
     width: 100%;
     border: solid rgb(105, 105, 105) 10px;
     border-radius: 10px;
+    z-index: 0;
 }
 
 img#germanDog,#huskeyDog,#samoyedDog {
     height: 304px !important ;
 }
 
-.naslovBreed{
-    margin: 15px;
-    font-size: larger;
-    margin-bottom: 30px;
-}
 
-.eachInfo {
-    font-size: large;
-}
 
 .linkBuy{
     margin-top: 20px;
@@ -281,94 +278,4 @@ img#germanDog,#huskeyDog,#samoyedDog {
    color: rgb(81, 255, 0);
    font-size: 150px;
 }
-
-/*      Food       */ 
-
-
-#food{
-    margin-top: 28px;
-    padding: 5rem ;
-    background-color: rgb(155, 155, 155);
-    color: rgb(255, 255, 255);
-    -webkit-box-shadow: 10px 10px 18px 1px #444444; 
-    box-shadow: 10px 10px 18px 1px #444444;
-    transition: 0.8s;
-    font-weight: bold;
-    font-family: sans-serif;
-    position: relative;
-    right: 4%;
-    border-radius: 2px 40px 40px 2px;
-}
-
-section .foodText{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 60px;
-    position: relative;
-}
-
-#food:hover{
-    font-size: 15px;
-    transform: scale(1.05);
-}
-
-.usImg{
-    width: 115%;
-}
-
-#textFood{
-    text-align: left;
-    align-content: center;
-    position: relative;
-
-}
-.foodDesc{
-    position: absolute;
-    bottom: 10%;
-    top: 80%;
-    text-align: center;
-}
-.breedText{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 60px;
-}
-
-/*      Food        */ 
-
-#toys{
-    padding: 80px;
-    background-color: rgb(148, 148, 148);
-    margin-top: 28px;
-    margin-left: 132px;
-    position: relative;
-    left: 8%;
-    -webkit-box-shadow: -10px 10px 18px 1px #444444; 
-    box-shadow: -10px 10px 18px 1px #444444;
-    transition: 0.8s;
-    font-weight: bold;
-    font-family: sans-serif;
-    border-radius: 40px 2px 2px 40px;
-    width: 1140px;
-}
-#toys:hover{
-    font-size: 15px;
-    transform: scale(1.05);
-}
-
-img#germanDog,#huskeyDog,#samoyedDog {
-    height: 304px !important ;
-}
-
-.naslovToys{
-    margin: 15px;
-    font-size: larger;
-    margin-bottom: 30px;
-}
-
-.eachToys {
-    font-size: large;
-}
-
-/*      About Us        */ 
 

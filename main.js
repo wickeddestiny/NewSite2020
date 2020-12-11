@@ -6,9 +6,10 @@ let logField = $("#loginField").css("visibility","visible");
 
 
 
-//          Prelazak u DarkMode
+
+//          Prelazak u DarkMode INDEX.HTML
     $(whiteImg).click(function(){
-        if(whiteImg){
+        if(whiteImg && $("body").attr("id") == "index" ){
             whiteImg.hide();
             blackImg.css("visibility","visible");
             $("#darkMode").attr("href","/styles/dark.css")
@@ -17,12 +18,34 @@ let logField = $("#loginField").css("visibility","visible");
         }
     });
 
-//          Prelazak u LightMode
+//          Prelazak u LightMode INDEX.HTML
     $(blackImg).click(function(){
-        if(blackImg){
+        if(blackImg && $("body").attr("id") == "index" ){
             blackImg.css("visibility","hidden");
             whiteImg.show();
             $("#darkMode").attr("href","/styles/index.css")
+        }
+        else{
+        }
+    });
+//          Prelazak u DarkMode LOGIN.HTML
+    $(whiteImg).click(function(){
+        if(whiteImg && $("body").attr("id") == "login" ){
+            whiteImg.hide();
+            blackImg.css("visibility","visible");
+            $("#darkMode").attr("href","/styles/dark.css")
+        }
+        else{
+            console.log("stupid")
+        }
+    });
+
+//          Prelazak u LightMode LOGIN.HTML
+    $(blackImg).click(function(){
+        if(blackImg && $("body").attr("id") == "login" ){
+            blackImg.css("visibility","hidden");
+            whiteImg.show();
+            $("#darkMode").attr("href","/styles/login.css")
         }
         else{
         }

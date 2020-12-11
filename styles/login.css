@@ -1,21 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    background-color: rgb(0, 141, 213);
+    width: 100%;
+    position: absolute;
+    background-image: url(/images/white\ dog.png);
+    background-repeat: repeat;
+    z-index: -2;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.pre-header {
+    background-color: rgb(121, 134, 164);
+    height: 6rem;
+    border: none;
+    border-radius: 0px 0px 90px 90px;
+    width: 100%;
+}
+
+
+.pre-header div p {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.pre-header div p:hover{
+    color: red;
+    font-size: 20px;
+}
+
+.logoWhite,.logoBlack{
+    /*
+    position: absolute;
+    */
+    height: 96px;
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.pre-menu{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.pre-menu li{
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: medium;
+    transition: 0.4s;
+}
+
+.pre-menu li:hover{
+    padding: 5px;
+    border: solid rgb(255, 238, 0) 3px ;
+    border-radius: 10px;
+}
+
+.pre-menu li a {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.pre-menu li a:hover {
+    color: rgb(255, 238, 0);
+    font-weight: 700;
+}
 
 
 
 #regForm{
     margin-top: 20rem;
     font-size: 1.5rem;
-    background-color: rgb(138, 138, 138);
+    background-color: rgb(120, 203, 206);
     padding: 5rem;
     border-radius: 10%;
-    
     
 }
 
 #emailField1,#emailField2,#repeatemailField{
     height: 3.8rem;
     font-size: larger;
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     
 }
@@ -27,7 +116,7 @@
 #passLog,#passSign,#passRepeat{
     height: 3.8rem;
     font-size: larger;
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
 
@@ -35,9 +124,10 @@
     display: block;
 }
 
-#checkSection1,checkSection2{
+#checkSection1,#checkSection2{
     width: auto;
-    height: 20%;
+    height: 15%;
+    margin-bottom: 0px;
 }
 
 #checkLogBtn,#checkLogBtn::selection,#keepLoggedIn,#keepLoggedIn::selection
@@ -49,7 +139,10 @@
 }
 
 label{
-    color: white;
+    color: rgb(0, 0, 0);
+}
+#emailHelp{
+    color: rgb(0, 0, 0) !important;
 }
 #forLoginPasswordField{
     position: relative;
@@ -74,11 +167,6 @@ label{
     left: 90%;
     top: 30%;
     cursor: pointer;
-}
-
-
-#showLoginPass{
-    margin-top: 15%;
 }
 
 #showLoginPass,#keepMeLogged,#showSignInPass,#agreeTerms{
