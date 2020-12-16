@@ -15,24 +15,24 @@
 <body id="login">
 
     <header id="pony" >
-        <div class="pre-header" >
+        <div class="pre-header"  >
             <div class="container-fluid" >
-                <div class="row" >
+                <div class="row" style="height: 6.5rem;" >
 
-                    <div class="col-md-5">
+                    <div class="col-md-5" style="height: 6.5rem;">
                         <p>Need Help? Need Training? <br> Call +381/61-233-43-72</p>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-2" style="height: 6.5rem;">
                         <img class="logoWhite"  src="/images/smWhiteLogo.png">
                         <img class="logoBlack" style="cursor: pointer;" src="/images/smBlackLogo.png">
                     </div>
                     
-                    <div class="col-md-5" id="pre-links">
+                    <div class="col-md-5" id="pre-links" style="height: 6.5rem;" >
                         <ul class="pre-menu">
                             <li><a href="index.html">Home</a></li>
                             <li><a style="color: rgb(255, 238, 0);" href="login.html" id="logSignPage" >Login/Register</a></li>
-                            <li><a href="#">Forum</a></li>
+                            <li><a href="member.html">Member</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -48,12 +48,12 @@
                 <button class="btnLog" style="background: transparent;">Log in</button>
                 <button class="btnSign">Sign Up</button>
             </div>
-            <div class="row">
+            <div class="row" style="align-items: center; justify-content: space-evenly;">
                 <form class="col-md-6" method="POST" id="loginField">
                         <div class="form-group">
 
                         <label for="exampleInputEmail1" >Email address</label>
-                        <input type="email" class="form-control" aria-describedby="emailHelp" id="emailField1"  autocomplete="on" required>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Must include: @ , .com !" id="emailField1"  autocomplete="on" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
                         </div>
@@ -67,8 +67,6 @@
 
                     </div>
                     <div class="form-group form-check" id="checkSection1">
-                        <!-- <input type="checkbox" class="form-check-input" id="checkLogBtn">
-                        <label class="form-check-label" for="exampleCheck1" id="showLoginPass" >Show Password</label> -->
                         <input type="checkbox" class="form-check-input" id="keepLoggedIn">
                         <label class="form-check-label" for="exampleCheck1" id="keepMeLogged" >Keep me Logged In</label>
                     </div>
@@ -80,7 +78,7 @@
             <form class="col-md-6"  method="POST" id="signinField" >
                     <div class="form-group" >
                         <label for="exampleInputEmail1" >Email address</label>
-                        <input type="email" class="form-control" aria-describedby="emailHelp" id="emailField2"  autocomplete="on" required>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" id="emailField2" placeholder="Must include: @ , .com !" autocomplete="on" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
                         <label for="exampleInputEmail1" >Repeat Email address</label>
@@ -92,24 +90,22 @@
 
                         <div id="forSignPasswordField">
                             <i class="fa fa-eye" aria-hidden="true" id="eyeSign"></i> 
-                            <input type="password" class="form-control" id="passSign" autocomplete="on" required>
+                            <input type="password" class="form-control" placeholder="Min-Max Characters(6-15) + Min Number (1)!" id="passSign" autocomplete="on" required>
                         </div>
                         
 
                         <label for="exampleInputPassword1" >Repeat Password</label>
-                        <input type="password" class="form-control" id="passRepeat" autocomplete="on" required>
+                        <input type="password" class="form-control"  id="passRepeat" autocomplete="on" required>
                     </div>
                     <div class="form-group form-check" id="checkSection2">
-                        <!-- <input type="checkbox" click="showPasswordSign()" class="form-check-input" id="checkSignBtn">
-                        <label class="form-check-label" for="exampleCheck1" id="showSignInPass" >Show Password</label> -->
-
+                       
                         <input type="checkbox" class="form-check-input" id="checkAgreeTerms" required>
                         <label class="form-check-label" for="exampleCheck1" id="agreeTerms"  >Agreed Terms of Service</label>
 
                     </div>
                 
-                <button  class="btn btn-primary" type="submit"="submit" id="signInBtn" style="font-weight: 700;"><i class="fa fa-spinner" aria-hidden="true" id="arrow"></i> SIGN UP</button>
-                                                                                        
+                <button  class="btn btn-primary" type="submit" id="signInBtn" style="font-weight: 700;"><i class="fa fa-spinner" aria-hidden="true" id="arrow"></i> SIGN UP</button>
+                                                   
                     
             </form>
         </div>

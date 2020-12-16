@@ -92,14 +92,14 @@ let logField = $("#loginField").css("visibility","visible");
         if ("password" == $("#passSign").attr("type")){
             $("#passSign").prop("type","text")
             $("#passRepeat").prop("type","text")
-            $("#eyeLog").removeClass()
-            $("#eyeLog").addClass("fa fa-eye-slash")
+            $("#eyeSign").removeClass()
+            $("#eyeSign").addClass("fa fa-eye-slash")
         }
         else{
             $("#passSign").prop("type","password")
             $("#passRepeat").prop("type","password")
-            $("#eyeLog").removeClass()
-            $("#eyeLog").addClass("fa fa-eye")
+            $("#eyeSign").removeClass()
+            $("#eyeSign").addClass("fa fa-eye")
         }
     });
 
@@ -119,6 +119,25 @@ let logField = $("#loginField").css("visibility","visible");
             }
         });
     });
+
+//          LogIn Password Include Validation
+
+
+
+    $("#signInBtn").click(function (inputtxt) {
+        const passInput = $("#passSign").val();
+        const passRepeat = $("#passRepeat").val()
+        let pwd=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/;
+        if(passInput.match(pwd) && passRepeat.match(pwd)) {
+            return true
+        }
+        else{
+            alert(' PASSWORD MUST INCLUDE! Min-Max Characters(6-15) + Min Number (1)!')
+            return false;
+        }
+    });
+
+
 
 
 

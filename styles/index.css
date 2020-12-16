@@ -132,7 +132,7 @@ header{
 }
 
 
-.buyNow {
+.memberBtn {
 	box-shadow:inset 0px 1px 0px 0px #fff6af;
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color:#ffec64;
@@ -155,14 +155,14 @@ header{
     align-items: center;
 }
 
-.buyNow:hover {
+.memberBtn:hover {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
     background-color:#ffab23;
     color: red !important;
     border:2px solid #ffaa22;
 }
 
-.buyNow:active {
+.memberBtn:active {
 	position:relative;
     top:1px;
 }

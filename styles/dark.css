@@ -132,7 +132,7 @@ header{
 }
 
 
-.buyNow {
+.memberBtn {
 	box-shadow:inset 0px 1px 0px 0px #fff6af;
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color:#ffec64;
@@ -156,13 +156,13 @@ header{
     align-items: center;
     
 }
-.buyNow:hover {
+.memberBtn:hover {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
     background-color:#ffab23;
     color: red !important;
     border:2px solid #ffaa22;
 }
-.buyNow:active {
+.memberBtn:active {
 	position:relative;
     top:1px;
     
@@ -275,24 +275,57 @@ img#germanDog,#huskeyDog,#samoyedDog {
 
 
 #regForm{
-    margin-top: 20rem;
+    margin-top: 7rem;
     font-size: 1.5rem;
     background-color: rgb(49, 132, 150);
-    padding: 5rem;
+    padding: 2rem 2rem;
     border-radius: 10%;
+    width: 70%;
+    height: 70%;
     
 }
+#powerBtn{
+    display: flex;
+    justify-content: space-evenly;
+    height: 6rem;
+    font-size: 1.5rem;
+    position: relative;
+    border-bottom: 2px rgb(255, 255, 255) dotted;
+}
+.btnSign ,.btnLog{
+    padding: 1.0rem 3rem;
+    background-color: rgb(209, 209, 209);
+    outline-style: none;
+    position: relative;
+    margin: auto;
+    border-radius: 30px;
+    border: 1;
+}
+.btnSign:focus,.btnLog:focus{
+    outline-style: none;
+    background: transparent;
+    box-shadow: rgb(54, 54, 54) 5px 5px;
+}
+.btnLog{
+    border-right: none;
+}
+
+.btnSign{
+    border-left: none;
+}
+
 #emailField1,#emailField2,#repeatemailField,
 #passLog,#passSign,#passRepeat{
-    height: 3.8rem;
-    font-size: larger;
+    height: 3rem;
+    font-size: 1.5rem;
     background-color: rgb(170, 178, 197);
     color: rgb(0, 0, 0);
-    
 }
-#repeatemailField{
-    margin-top: 16px;
-}
+.form-control::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+  }
+
 .passwordLabel{
     display: block;
 }
@@ -301,86 +334,75 @@ img#germanDog,#huskeyDog,#samoyedDog {
     width: auto;
     height: 15%;
     margin-bottom: 0px;
-}
-label{
-    color: rgb(0, 0, 0);
-}
-
-#emailHelp{
-    color: rgb(0, 0, 0) !important; 
-}
-#forLoginPasswordField{
-    position: relative;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 #checkLogBtn,#checkLogBtn::selection,#keepLoggedIn,#keepLoggedIn::selection
 ,#checkSignBtn,#checkSignBtn::selection,#checkAgreeTerms,#checkAgreeTerms::selection{
-    height: 1.8rem;
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 1.5rem;
+    width: 1.5rem;
     margin-left: 10%;
 }
-#eyeLog{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 90%;
-    top: 30%;
-    cursor: pointer;
+label{
+    color: rgb(255, 255, 255);
 }
-#eyeSign{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 90%;
-    top: 30%;
-    cursor: pointer;
+
+#emailHelp{
+    color: rgb(0, 0, 0) !important; 
+    font-size: medium;
+}
+#forLoginPasswordField{
+    position: relative;
 }
 #forSignPasswordField{
     position: relative;
-    
+}
+
+#eyeLog,#eyeSign{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    top: 25%;
+    cursor: pointer;
 }
 
 
 #showLoginPass,#keepMeLogged,#showSignInPass,#agreeTerms{
     margin-left: 20%;
     display: block;
-    
 }
 #keepMeLogged:checked{
     background-color: rgb(0, 0, 0) !important;
 }
 
 #logInBtn,#signInBtn{
-    width: 15rem;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 10rem;
+    margin: 20px auto;
     padding: 1rem;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(0, 0, 0);
     color: white;
-    
-    
+    align-items: center;
 }
 
 #arrow{
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 30px;
     
 }
 #logInBtn:hover i,#signInBtn:hover i{
     
-    animation: loginArrow 1.3s ease-in-out;
+    animation: loginArrow 1.3s ease-in-out infinite;
     
 }
 @keyframes loginArrow{
     form{
         transform: rotate(0deg);
-        
     }
     25%{
         transform: rotate(90deg);
@@ -388,49 +410,14 @@ label{
     }
     50%{
         transform: rotate(180deg);
-        color: rgb(255, 251, 0);
+        color: rgb(4, 0, 255);
     }
     75%{
         transform: rotate(270deg);
-        color: rgb(131, 131, 131);
+        color: rgb(212, 0, 255);
     }
     to{
         transform: rotate(360deg);
-        color: rgb(255, 255, 255);
+        color: rgb(229, 255, 0);
     }
-}
-
-#powerBtn{
-    display: flex;
-    justify-content: center;
-    height: 6rem;
-    align-items: center;
-    font-size: 1.5rem;
-    position: relative;
-}
-.btnSign ,.btnLog{
-    padding: 1.0rem 3rem;
-    background-color: 209, 209, 209;
-    outline-style: none;
-    position: relative;
-    margin: auto;
-    
-    
-}
-.btnSign:focus,.btnLog:focus{
-    outline-style: none;
-    background: transparent;
-    border-radius: 30px 30px 30px 30px;
-    
-}
-.btnLog{
-    border: 1;
-    border-right: none;
-    border-radius: 30px 30px 30px 30px;
-}
-
-.btnSign{
-    border: 1px 1px 1px 0px;
-    border-radius: 30px 30px 30px 30px;
-    border-left: none;
 }
