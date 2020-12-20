@@ -263,7 +263,7 @@ img#germanDog,#huskeyDog,#samoyedDog {
    transition: 0.8s;
 }
 #paw:hover{
-   color: rgb(32, 65, 255);
+   color: rgb(255, 255, 255);
    font-size: 150px;
    
 }
