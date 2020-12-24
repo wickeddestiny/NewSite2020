@@ -1,244 +1,251 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(0, 141, 213);
-    width: 100%;
-    position: absolute;
-    background-image: url(/images/white\ dog.png);
-    background-repeat: repeat;
-    z-index: -2;
+body {
+  background-color: rgb(0, 141, 213);
+  width: 100%;
+  position: absolute;
+  background-image: url(../images/white\ dog.png);
+  background-repeat: repeat;
+  z-index: -2;
 }
 
-header{
-    width: 100%;
-    position: fixed;
-    z-index: 1;
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .pre-header {
-    background-color: rgb(121, 134, 164);
-    height: 6rem;
-    border: none;
-    border-radius: 0px 0px 90px 90px;
-    width: 100%;
+  background-color: rgb(121, 134, 164);
+  height: 6rem;
+  border: none;
+  border-radius: 0px 0px 90px 90px;
+  width: 100%;
 }
-
 
 .pre-header div p {
-    text-transform: uppercase;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
-    transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: 0.2s;
 }
 
-.pre-header div p:hover{
-    color: red;
-    font-size: 20px;
+.pre-header div p:hover {
+  color: red;
+  font-size: 20px;
 }
 
-.logoWhite,.logoBlack{
-    /*
+.logoWhite,
+.logoBlack {
+  /*
     position: absolute;
     */
-    height: 96px;
-    width: 100%;
-    object-fit: contain;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
+  height: 96px;
+  width: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
-.pre-menu{
-    list-style: none;
-    text-align: center;
-    display: inline-block;
-    text-transform: uppercase;
-    width: 100%;
+.pre-menu {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 100%;
 }
 
-.pre-menu li{
-    display: inline-block;
-    margin-left: 15px;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    font-size: medium;
-    transition: 0.4s;
+.pre-menu li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: medium;
+  transition: 0.4s;
 }
 
-.pre-menu li:hover{
-    padding: 5px;
-    border: solid rgb(255, 238, 0) 3px ;
-    border-radius: 10px;
+.pre-menu li:hover {
+  padding: 5px;
+  border: solid rgb(255, 238, 0) 3px;
+  border-radius: 10px;
 }
 
 .pre-menu li a {
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    text-decoration: none;
-    transition: 0.2s;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .pre-menu li a:hover {
-    color: rgb(255, 238, 0);
-    font-weight: 700;
+  color: rgb(255, 238, 0);
+  font-weight: 700;
 }
 
-
-
-#regForm{
-    margin-top: 7rem;
-    font-size: 1.5rem;
-    background-color: rgb(120, 203, 206);
-    padding: 2rem 2rem;
-    border-radius: 10%;
-    width: 70%;
-    height: 70%;
+#regForm {
+  margin-top: 7rem;
+  font-size: 1.5rem;
+  background-color: rgb(120, 203, 206);
+  padding: 2rem 2rem;
+  border-radius: 10%;
+  width: 70%;
+  height: 70%;
 }
 
-#powerBtn{
-    display: flex;
-    justify-content: space-evenly;
-    height: 6rem;
-    font-size: 1.5rem;
-    position: relative;
-    border-bottom: 2px black dotted;
-    
+#powerBtn {
+  display: flex;
+  justify-content: space-evenly;
+  height: 6rem;
+  font-size: 1.5rem;
+  position: relative;
+  border-bottom: 2px black dotted;
 }
 
-.btnSign ,.btnLog{
-    padding: 1.0rem 3rem;
-    background-color: rgb(255, 255, 255);
-    outline-style: none;
-    position: relative;
-    margin: auto;
-    border-radius: 30px;
-    border: 1;
+.btnSign,
+.btnLog {
+  padding: 1rem 3rem;
+  background-color: rgb(255, 255, 255);
+  outline-style: none;
+  position: relative;
+  margin: auto;
+  border-radius: 30px;
+  border: 1;
 }
 
-.btnSign:focus,.btnLog:focus{
-    outline-style: none;
-    background: transparent;
-    box-shadow: 3px 3px black;
-    
+.btnSign:focus,
+.btnLog:focus {
+  outline-style: none;
+  background: transparent;
+  box-shadow: 3px 3px black;
 }
 
-
-.btnLog{
-
-    border-right: none;
+.btnLog {
+  border-right: none;
 }
 
-.btnSign{
-    border-left: none;
+.btnSign {
+  border-left: none;
 }
 
-#emailField1,#emailField2,#repeatemailField,
-#passLog,#passSign,#passRepeat{
-    height: 3rem;
-    font-size: 1.5rem;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    
+#emailField1,
+#emailField2,
+#repeatemailField,
+#passLog,
+#passSign,
+#passRepeat {
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
-.passwordLabel{
-    display: block;
+.passwordLabel {
+  display: block;
 }
 
-#checkSection1,#checkSection2{
-    width: auto;
-    height: 15%;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: space-between;
+#checkSection1,
+#checkSection2 {
+  width: auto;
+  height: 15%;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
-#checkLogBtn,#checkLogBtn::selection,#keepLoggedIn,#keepLoggedIn::selection
-,#checkSignBtn,#checkSignBtn::selection,#checkAgreeTerms,#checkAgreeTerms::selection{
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-left: 10%;
-    
+#checkLogBtn,
+#checkLogBtn::selection,
+#keepLoggedIn,
+#keepLoggedIn::selection,
+#checkSignBtn,
+#checkSignBtn::selection,
+#checkAgreeTerms,
+#checkAgreeTerms::selection {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 10%;
 }
 
-label{
-    color: rgb(0, 0, 0);
+label {
+  color: rgb(0, 0, 0);
 }
-#emailHelp{
-    color: rgb(0, 0, 0) !important;
-    font-size: medium;
+#emailHelp {
+  color: rgb(0, 0, 0) !important;
+  font-size: medium;
 }
-#forLoginPasswordField{
-    position: relative;
+#forLoginPasswordField {
+  position: relative;
 }
-#forSignPasswordField{
-    position: relative;
+#forSignPasswordField {
+  position: relative;
 }
-#eyeLog,#eyeSign{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 90%;
-    top: 25%;
-    cursor: pointer;
-}
-
-
-#showLoginPass,#keepMeLogged,#showSignInPass,#agreeTerms{
-    margin-left: 20%;
-    display: block;
+#eyeLog,
+#eyeSign {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 90%;
+  top: 25%;
+  cursor: pointer;
 }
 
-
-
-#logInBtn,#signInBtn{
-    width: 10rem;
-    margin: 20px auto;
-    padding: 1rem;
-    align-items: center;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    align-items: center;
-    
+#showLoginPass,
+#keepMeLogged,
+#showSignInPass,
+#agreeTerms {
+  margin-left: 20%;
+  display: block;
 }
 
-#arrow{
-    color: rgb(0, 0, 0);
-    font-size: 30px;
+#logInBtn,
+#signInBtn {
+  width: 10rem;
+  margin: 20px auto;
+  padding: 1rem;
+  align-items: center;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  align-items: center;
 }
 
-#logInBtn:hover i,#signInBtn:hover i{
-    animation: loginArrow 1.3s ease-in-out infinite;
+#arrow {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
 }
 
-@keyframes loginArrow{
-    form{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(90deg);
-        color: rgb(255, 0, 0);
-    }
-    50%{
-        transform: rotate(180deg);
-        color: rgb(4, 0, 255);
-    }
-    75%{
-        transform: rotate(270deg);
-        color: rgb(212, 0, 255);
-    }
-    to{
-        transform: rotate(360deg);
-        color: rgb(229, 255, 0);
-    }
+#logInBtn:hover i,
+#signInBtn:hover i {
+  animation: loginArrow 1.3s ease-in-out infinite;
+}
+
+@keyframes loginArrow {
+  form {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+    color: rgb(255, 0, 0);
+  }
+  50% {
+    transform: rotate(180deg);
+    color: rgb(4, 0, 255);
+  }
+  75% {
+    transform: rotate(270deg);
+    color: rgb(212, 0, 255);
+  }
+  to {
+    transform: rotate(360deg);
+    color: rgb(229, 255, 0);
+  }
 }
