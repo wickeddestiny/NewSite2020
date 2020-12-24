@@ -1,283 +1,284 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(0, 141, 213);
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-image: url(/images/white\ dog.png);
-    background-repeat: repeat;
-    z-index: -2;
+body {
+  background-color: rgb(0, 141, 213);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url(../images/white\ dog.png);
+  background-repeat: repeat;
+  z-index: -2;
 }
 
-header{
-    width: 100%;
-    position: sticky;
-    z-index: 1;
-    top: 0;
+header {
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
 
 .pre-header {
-    background-color: rgb(121, 134, 164);
-    height: 6rem;
-    border: none;
-    border-radius: 0px 0px 90px 90px;
-    width: 100%;
+  background-color: rgb(121, 134, 164);
+  height: 6rem;
+  border: none;
+  border-radius: 0px 0px 90px 90px;
+  width: 100%;
 }
 
 .pre-header div p {
-    text-transform: uppercase;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
-    transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: 0.2s;
 }
 
-.pre-header div p:hover{
-    color: red;
-    font-size: 20px;
+.pre-header div p:hover {
+  color: red;
+  font-size: 20px;
 }
 
-.logoWhite,.logoBlack{
-    /*
+.logoWhite,
+.logoBlack {
+  /*
     position: absolute;
     */
-    height: 96px;
-    width: 100%;
-    object-fit: contain;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
+  height: 96px;
+  width: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
-.pre-menu{
-    list-style: none;
-    text-align: center;
-    display: inline-block;
-    text-transform: uppercase;
-    width: 100%;
+.pre-menu {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 100%;
 }
 
-.pre-menu li{
-    display: inline-block;
-    margin-left: 15px;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    font-size: medium;
-    transition: 0.4s;
+.pre-menu li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: medium;
+  transition: 0.4s;
 }
 
-.pre-menu li:hover{
-    padding: 5px;
-    border: solid rgb(255, 238, 0) 3px ;
-    border-radius: 10px;
+.pre-menu li:hover {
+  padding: 5px;
+  border: solid rgb(255, 238, 0) 3px;
+  border-radius: 10px;
 }
 
 .pre-menu li a {
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    text-decoration: none;
-    transition: 0.2s;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .pre-menu li a:hover {
-    color: rgb(255, 238, 0);
-    font-weight: 700;
+  color: rgb(255, 238, 0);
+  font-weight: 700;
 }
 
-#nav-space{
-    background-color: rgb(170, 178, 197);
-    height: 4rem;
-    width: 84%;
-    border: none;
-    border-radius: 0px 0px 90px 90px;
+#nav-space {
+  background-color: rgb(170, 178, 197);
+  height: 4rem;
+  width: 84%;
+  border: none;
+  border-radius: 0px 0px 90px 90px;
 }
 
-.main-menu{
-    display: flex;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    justify-content: center;
+.main-menu {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  justify-content: center;
 }
 
 .main-menu li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 35px;
-    align-items: center;
-    margin-top: 0px;
-    max-width: 100%;
-    display: inline-flex;
-    justify-content: center;
+  list-style: none;
+  display: inline-block;
+  margin-left: 35px;
+  align-items: center;
+  margin-top: 0px;
+  max-width: 100%;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .main-menu li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    transition: 0.4s;
-    font-size: medium;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: 0.4s;
+  font-size: medium;
 }
 
 .main-menu li:not(:last-child) a:hover {
-    color: #fffb00;
-    border: solid 2px yellow;
-    text-decoration: none;
-    border-radius: 50%;
-    padding: 10px;
+  color: #fffb00;
+  border: solid 2px yellow;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-
 .memberBtn {
-	box-shadow:inset 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
-	border-radius:6px;
-	border:1px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-size:15px;
-	padding:8px 20px ;
-	text-decoration:none;
-    text-shadow:0px 1px 0px #ffee66;
-    background-color: rgb(237, 255, 73);
-    width: 8rem;
-    color: rgb(31, 5, 5) !important;
-    font-weight: 500;
-    border: solid 2px rgb(0, 0, 0);
-    text-align: center;
-    border-radius: 20px;
-    align-items: center;
+  box-shadow: inset 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 6px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-size: 15px;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  background-color: rgb(237, 255, 73);
+  width: 8rem;
+  color: rgb(31, 5, 5) !important;
+  font-weight: 500;
+  border: solid 2px rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
 }
 
 .memberBtn:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-    background-color:#ffab23;
-    color: red !important;
-    border:2px solid #ffaa22;
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+  color: red !important;
+  border: 2px solid #ffaa22;
 }
 
 .memberBtn:active {
-	position:relative;
-    top:1px;
+  position: relative;
+  top: 1px;
 }
 
+/*      About Us        */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*      About Us        */ 
-
-.naslovAbout,.naslovBreed,.naslovFood,.naslovToys{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: 60px;
-    position: relative;
+.naslovAbout,
+.naslovBreed,
+.naslovFood,
+.naslovToys {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 60px;
+  position: relative;
 }
 
-#aboutUs,#breed,#food,#toys{
-    margin: 14rem auto 4rem auto;
-    padding: 5rem ;
-    background-color: rgb(120, 203, 206);
-    -webkit-box-shadow: 10px 10px 18px 1px #444444; 
-    box-shadow: 10px 10px 18px 1px #444444;
-    transition: 0.8s;
-    font-weight: bold;
-    font-family: sans-serif;
-    position: relative;
-    border-radius: 2px 40px 40px 2px;
-    font-size: larger;
+#aboutUs,
+#breed,
+#food,
+#toys {
+  margin: 14rem auto 4rem auto;
+  padding: 5rem;
+  background-color: rgb(120, 203, 206);
+  -webkit-box-shadow: 10px 10px 18px 1px #444444;
+  box-shadow: 10px 10px 18px 1px #444444;
+  transition: 0.8s;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: relative;
+  border-radius: 2px 40px 40px 2px;
+  font-size: larger;
 }
-#aboutUs,#food{
-    color: rgb(255, 255, 255);
+#aboutUs,
+#food {
+  color: rgb(255, 255, 255);
 }
-#breed,#food,#toys{
-    margin: 4rem auto 4rem auto;
+#breed,
+#food,
+#toys {
+  margin: 4rem auto 4rem auto;
 }
-#aboutUs:hover,#breed:hover,#food:hover,#toys:hover {
-    font-size: 15px;
-    transform: scale(1.10);
+#aboutUs:hover,
+#breed:hover,
+#food:hover,
+#toys:hover {
+  font-size: 15px;
+  transform: scale(1.1);
 }
-#aboutText,#foodText,.breedText,.toyText{
-    text-align: left;
-    align-content: center;
-    position: relative;
-    font-size: medium;
+#aboutText,
+#foodText,
+.breedText,
+.toyText {
+  text-align: left;
+  align-content: center;
+  position: relative;
+  font-size: medium;
 }
-.breedText p:first-child{
-    font-size: x-large;
+.breedText p:first-child {
+  font-size: x-large;
 }
-.toyText p:first-child{
-    font-size: x-large;
+.toyText p:first-child {
+  font-size: x-large;
 }
-.usImg{
-    width: 115%;
-    border: solid black 4px;
-}
-
-
-.aboutDesc,.foodDesc,.toysDesc,.breadDesc{
-    position: absolute;
-    bottom: 10%;
-    top: 80%;
-    text-align: center;
-    font-size: large;
-}
-
-.sectionPhotos{
-    width: 115%;
-    border-radius: 15%;
+.usImg {
+  width: 115%;
+  border: solid black 4px;
 }
 
-#carouselExampleCaptions{
-    font-size: 1.1rem;
-    width: 100%;
-    border: solid rgb(105, 105, 105) 10px;
-    border-radius: 10px;
-    z-index: 0;
+.aboutDesc,
+.foodDesc,
+.toysDesc,
+.breadDesc {
+  position: absolute;
+  bottom: 10%;
+  top: 80%;
+  text-align: center;
+  font-size: large;
 }
 
-img#germanDog,#huskeyDog,#samoyedDog {
-    height: 304px !important ;
+.sectionPhotos {
+  width: 115%;
+  border-radius: 15%;
 }
 
-
-
-.linkBuy{
-    margin-top: 20px;
-    text-align: center;
+#carouselExampleCaptions {
+  font-size: 1.1rem;
+  width: 100%;
+  border: solid rgb(105, 105, 105) 10px;
+  border-radius: 10px;
+  z-index: 0;
 }
 
-.clickPBtn{
-    text-decoration: none !important;
+img#germanDog,
+#huskeyDog,
+#samoyedDog {
+  height: 304px !important ;
 }
 
-#paw{
-   color: rgb(255, 255, 255);
-   font-size: 150px;
-   transition: 0.8s;
+.linkBuy {
+  margin-top: 20px;
+  text-align: center;
 }
 
-#paw:hover{
-   color: rgb(0, 0, 0);
-   font-size: 150px;
+.clickPBtn {
+  text-decoration: none !important;
 }
 
+#paw {
+  color: rgb(255, 255, 255);
+  font-size: 150px;
+  transition: 0.8s;
+}
+
+#paw:hover {
+  color: rgb(0, 0, 0);
+  font-size: 150px;
+}
